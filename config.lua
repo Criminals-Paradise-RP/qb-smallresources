@@ -51,33 +51,33 @@ Config.EnableWantedLevel = false
 
 -- To Set This Up visit https://forum.cfx.re/t/how-to-updated-discord-rich-presence-custom-image/157686
 Config.Discord = {
-    ["IsEnabled"] = false, -- If set to true, then discord rich presence will be enabled
-    ["ApplicationId"] = '00000000000000000', -- The discord application id
-    ["IconLarge"] = 'logo_name', -- The name of the large icon
-    ["IconLargeHoverText"] = 'This is a Large icon with text', -- The hover text of the large icon
-    ["IconSmall"] = 'small_logo_name', -- The name of the small icon
-    ["IconSmallHoverText"] = 'This is a Small icon with text', -- The hover text of the small icon
+    ["IsEnabled"] = true, -- If set to true, then discord rich presence will be enabled
+    ["ApplicationId"] = '1053825704216768523', -- The discord application id
+    ["IconLarge"] = 'cprp512x512', -- The name of the large icon
+    ["IconLargeHoverText"] = 'Criminals Paradise RP', -- The hover text of the large icon
+    ["IconSmall"] = 'cprp512x512', -- The name of the small icon
+    ["IconSmallHoverText"] = 'Criminals Paradise RP', -- The hover text of the small icon
     ["UpdateRate"] = 60000, -- How often the player count should be updated
     ["ShowPlayerCount"] = true, -- If set to true the player count will be displayed in the rich presence
-    ["MaxPlayers"] = 48, -- Maximum amount of players
+    ["MaxPlayers"] = 64, -- Maximum amount of players
     ["Buttons"] = {
         {
-            text = 'First Button!',
-            url = 'fivem://connect/localhost:30120'
+            text = 'CPRP Discord',
+            url = 'https://discord.gg/nnvz7aV8c4'
         },
         {
-            text = 'Second Button!',
-            url = 'fivem://connect/localhost:30120'
+            text = 'Join the Server Now!',
+            url = 'https://cfx.re/join/3rvdjz'
         }
     }
 }
 
 Config.Density = {
-    ['parked'] = 0.8,
-    ['vehicle'] = 0.8,
-    ['multiplier'] = 0.8,
-    ['peds'] = 0.8,
-    ['scenario'] = 0.8,
+    ['parked'] = 0.6,
+    ['vehicle'] = 0.6,
+    ['multiplier'] = 0.6,
+    ['peds'] = 0.6,
+    ['scenario'] = 0.6,
 }
 
 Config.Stun = {
@@ -92,13 +92,13 @@ Config.Cruise = 'mp/h'
 Config.IdleCamera = true
 Config.disableHandsupControls = {24, 25, 47, 58, 59, 63, 64, 71, 72, 75, 140, 141, 142, 143, 257, 263, 264}
 Config.DisableAmbience = false -- Disabled distance sirens, distance car alarms, etc
-Config.HarnessUses = 20
+Config.HarnessUses = 500
 Config.DamageNeeded = 100.0 -- vehiclepush 0-1000
 Config.EnableProne = false -- prone isnt recomended at this time
-Config.MapText = "Server Name" -- This is the name / text shown above the map
+Config.MapText = "Criminal's Paradise RP" -- This is the name / text shown above the map
 
 Config.Disable = {
-    disableHudComponents = {1, 2, 3, 4, 7, 9, 13, 14, 19, 20, 21, 22}, -- Hud Components: https://docs.fivem.net/natives/?_0x6806C51AD12B83B8
+    disableHudComponents = {1, 2, 3, 4, 7, 9, 13, 19, 20, 21, 22}, -- Hud Components: https://docs.fivem.net/natives/?_0x6806C51AD12B83B8
     disableControls = {37}, -- Controls: https://docs.fivem.net/docs/game-references/controls/
     displayAmmo = true -- false disables ammo display
 }
@@ -109,18 +109,44 @@ Config.ConsumablesEat = {
     ["tosti"] = math.random(40, 50),
     ["twerks_candy"] = math.random(35, 54),
     ["snikkel_candy"] = math.random(40, 50),
+    ["burger-bleeder"] = math.random(35, 54),
+    ["burger-moneyshot"] = math.random(35, 54),
+    ["burger-torpedo"] = math.random(35, 54),
+    ["burger-heartstopper"] = math.random(35, 54),
+    ["burger-meatfree"] = math.random(35, 54),
+    ["burger-fries"] = math.random(35, 54),
+    ["apple"] = math.random(10, 20),
+    ["beef"] = math.random(35, 50),
+    ["slicedpie"] = math.random(10, 20),
+    ["corncob"] = math.random(25, 40),
+    ["canofcorn"] = math.random(35, 50),
+    ["grapes"] = math.random(10, 20),
+    ["greenpepper"] = math.random(10, 20),
+    ["chillypepper"] = math.random(10, 20),
+    ["tomato"] = math.random(10, 20),
+    ["tomatopaste"] = math.random(25, 40),
+    ["cooked_bacon"] = math.random(35, 50),
+    ["cooked_sausage"] = math.random(35, 50),
+    ["cooked_pork"] = math.random(35, 50),
+    ["cooked_ham"] = math.random(35, 50),
 }
 
 Config.ConsumablesDrink = {
     ["water_bottle"] = math.random(35, 54),
     ["kurkakola"] = math.random(35, 54),
     ["coffee"] = math.random(40, 50),
+    ["burger-softdrink"] = math.random(40, 50),
+    ["burger-mshake"] = math.random(40, 50),
 }
 
 Config.ConsumablesAlcohol = {
     ["whiskey"] = math.random(20, 30),
     ["beer"] = math.random(30, 40),
     ["vodka"] = math.random(20, 40),
+    ["apple_juice"] = math.random(25, 45),
+    ["grapejuice"] = math.random(25, 45),
+    ["hotsauce"] = math.random(10, 15),
+    ["m-moonshine"] = math.random(20, 30),
 }
 
 -- Custom Consumables hand bones
@@ -180,53 +206,53 @@ Config.BlacklistedScenarios = {
 }
 
 Config.BlacklistedVehs = {
-    [`SHAMAL`] = true,
-    [`LUXOR`] = true,
-    [`LUXOR2`] = true,
-    [`JET`] = true,
-    [`LAZER`] = true,
-    [`BUZZARD`] = true,
-    [`BUZZARD2`] = true,
-    [`ANNIHILATOR`] = true,
-    [`SAVAGE`] = true,
-    [`TITAN`] = true,
-    [`RHINO`] = true,
-    [`FIRETRUK`] = true,
-    [`MULE`] = true,
-    [`MAVERICK`] = true,
-    [`BLIMP`] = true,
-    [`AIRTUG`] = true,
-    [`CAMPER`] = true,
-    [`HYDRA`] = true,
-    [`OPPRESSOR`] = true,
-    [`technical3`] = true,
-    [`insurgent3`] = true,
-    [`apc`] = true,
-    [`tampa3`] = true,
-    [`trailersmall2`] = true,
-    [`halftrack`] = true,
-    [`hunter`] = true,
-    [`vigilante`] = true,
-    [`akula`] = true,
-    [`barrage`] = true,
-    [`khanjali`] = true,
-    [`caracara`] = true,
-    [`blimp3`] = true,
-    [`menacer`] = true,
-    [`oppressor2`] = true,
-    [`scramjet`] = true,
-    [`strikeforce`] = true,
-    [`cerberus`] = true,
-    [`cerberus2`] = true,
-    [`cerberus3`] = true,
-    [`scarab`] = true,
-    [`scarab2`] = true,
-    [`scarab3`] = true,
-    [`rrocket`] = true,
-    [`ruiner2`] = true,
-    [`deluxo`] = true,
-    [`cargoplane2`] = true,
-    [`voltic2`] = true,
+    -- [`SHAMAL`] = true,
+    -- [`LUXOR`] = true,
+    -- [`LUXOR2`] = true,
+    -- [`JET`] = true,
+    -- [`LAZER`] = true,
+    -- [`BUZZARD`] = true,
+    -- [`BUZZARD2`] = true,
+    -- [`ANNIHILATOR`] = true,
+    -- [`SAVAGE`] = true,
+    -- [`TITAN`] = true,
+    -- [`RHINO`] = true,
+    -- [`FIRETRUK`] = true,
+    -- [`MULE`] = true,
+    -- [`MAVERICK`] = true,
+    -- [`BLIMP`] = true,
+    -- [`AIRTUG`] = true,
+    -- [`CAMPER`] = true,
+    -- [`HYDRA`] = true,
+    -- [`OPPRESSOR`] = true,
+    -- [`technical3`] = true,
+    -- [`insurgent3`] = true,
+    -- [`apc`] = true,
+    -- [`tampa3`] = true,
+    -- [`trailersmall2`] = true,
+    -- [`halftrack`] = true,
+    -- [`hunter`] = true,
+    -- [`vigilante`] = true,
+    -- [`akula`] = true,
+    -- [`barrage`] = true,
+    -- [`khanjali`] = true,
+    -- [`caracara`] = true,
+    -- [`blimp3`] = true,
+    -- [`menacer`] = true,
+    -- [`oppressor2`] = true,
+    -- [`scramjet`] = true,
+    -- [`strikeforce`] = true,
+    -- [`cerberus`] = true,
+    -- [`cerberus2`] = true,
+    -- [`cerberus3`] = true,
+    -- [`scarab`] = true,
+    -- [`scarab2`] = true,
+    -- [`scarab3`] = true,
+    -- [`rrocket`] = true,
+    -- [`ruiner2`] = true,
+    -- [`deluxo`] = true,
+    -- [`cargoplane2`] = true,
+    -- [`voltic2`] = true,
 }
 
 Config.BlacklistedWeapons = {
@@ -245,16 +271,24 @@ Config.BlacklistedPeds = {
 Config.DisableVestDrawable = false -- Set to TRUE to disable the vest equipped when using heavy armor.
 Config.HolsterVariant = {130,122,3,6,8}
 Config.HolsterableWeapons = {
-    --'WEAPON_STUNGUN',
-    'WEAPON_PISTOL',
-    'WEAPON_PISTOL_MK2',
-    'WEAPON_COMBATPISTOL',
-    'WEAPON_APPISTOL',
-    'WEAPON_PISTOL50',
-    'WEAPON_REVOLVER',
-    'WEAPON_SNSPISTOL',
-    'WEAPON_HEAVYPISTOL',
-    'WEAPON_VINTAGEPISTOL'
+	'WEAPON_STUNGUN',
+	'WEAPON_PISTOL',
+	'WEAPON_PISTOL_MK2',
+	'WEAPON_COMBATPISTOL',
+	'WEAPON_APPISTOL',
+	'WEAPON_PISTOL50',
+	'WEAPON_REVOLVER',
+	'WEAPON_SNSPISTOL',
+	'WEAPON_HEAVYPISTOL',
+	'WEAPON_VINTAGEPISTOL',
+	--Custom Weapon
+	'WEAPON_DE',
+	'WEAPON_GLOCK17',
+	'WEAPON_M9',
+	'WEAPON_M1911',
+	'WEAPON_FNX45',
+	'WEAPON_GLOCK18C',
+	'WEAPON_GLOCK22'
 }
 
 Config.Objects = { -- for object removal
@@ -366,6 +400,15 @@ Config.CarWash = { -- carwash
         ["label"] = "Hands Free Carwash",
         ["poly"] = {
             coords = vector3(-699.84, -932.68, 18.59),
+            length = 11.8,
+            width = 5.2,
+            heading = 0
+        }
+    },
+    [6] = {
+        ["label"] = "East Customs Carwash",
+        ["poly"] = {
+            coords = vector3(851.67, -2110.91, 30.58),
             length = 11.8,
             width = 5.2,
             heading = 0
