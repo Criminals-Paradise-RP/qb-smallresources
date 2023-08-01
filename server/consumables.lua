@@ -1,30 +1,30 @@
 local QBCore = exports['qb-core']:GetCoreObject()
 ----------- / alcohol
 
-for k,_ in pairs(Config.ConsumablesAlcohol) do
-    QBCore.Functions.CreateUseableItem(k, function(source, item)
-        TriggerClientEvent("consumables:client:DrinkAlcohol", source, item.name)
-    end)
-end
+-- for k,_ in pairs(Config.ConsumablesAlcohol) do
+--     QBCore.Functions.CreateUseableItem(k, function(source, item)
+--         TriggerClientEvent("consumables:client:DrinkAlcohol", source, item.name)
+--     end)
+-- end
 
------------ / Eat
+-- ----------- / Eat
 
-for k,_ in pairs(Config.ConsumablesEat) do
-    QBCore.Functions.CreateUseableItem(k, function(source, item)
-        local Player = QBCore.Functions.GetPlayer(source)
-        if not Player.Functions.RemoveItem(item.name, 1, item.slot) then return end
-        TriggerClientEvent("consumables:client:Eat", source, item.name)
-    end)
-end
+-- for k,_ in pairs(Config.ConsumablesEat) do
+--     QBCore.Functions.CreateUseableItem(k, function(source, item)
+--         local Player = QBCore.Functions.GetPlayer(source)
+--         if not Player.Functions.RemoveItem(item.name, 1, item.slot) then return end
+--         TriggerClientEvent("consumables:client:Eat", source, item.name)
+--     end)
+-- end
 
------------ / Drink
-for k,_ in pairs(Config.ConsumablesDrink) do
-    QBCore.Functions.CreateUseableItem(k, function(source, item)
-        local Player = QBCore.Functions.GetPlayer(source)
-        if not Player.Functions.RemoveItem(item.name, 1, item.slot) then return end
-        TriggerClientEvent("consumables:client:Drink", source, item.name)
-    end)
-end
+-- ----------- / Drink
+-- for k,_ in pairs(Config.ConsumablesDrink) do
+--     QBCore.Functions.CreateUseableItem(k, function(source, item)
+--         local Player = QBCore.Functions.GetPlayer(source)
+--         if not Player.Functions.RemoveItem(item.name, 1, item.slot) then return end
+--         TriggerClientEvent("consumables:client:Drink", source, item.name)
+--     end)
+-- end
 
 ----------- / Custom
 for k,_ in pairs(Config.ConsumablesCustom) do
@@ -44,31 +44,31 @@ local function CreateItem(name,type)
 end
 ----------- / Drug
 
-QBCore.Functions.CreateUseableItem("joint", function(source, item)
-    local Player = QBCore.Functions.GetPlayer(source)
-    if not Player.Functions.RemoveItem(item.name, 1, item.slot) then return end
-    TriggerClientEvent("consumables:client:UseJoint", source)
-end)
+-- QBCore.Functions.CreateUseableItem("joint", function(source, item)
+--     local Player = QBCore.Functions.GetPlayer(source)
+--     if not Player.Functions.RemoveItem(item.name, 1, item.slot) then return end
+--     TriggerClientEvent("consumables:client:UseJoint", source)
+-- end)
 
-QBCore.Functions.CreateUseableItem("cokebaggy", function(source)
-    TriggerClientEvent("consumables:client:Cokebaggy", source)
-end)
+-- QBCore.Functions.CreateUseableItem("cokebaggy", function(source)
+--     TriggerClientEvent("consumables:client:Cokebaggy", source)
+-- end)
 
-QBCore.Functions.CreateUseableItem("crack_baggy", function(source)
-    TriggerClientEvent("consumables:client:Crackbaggy", source)
-end)
+-- QBCore.Functions.CreateUseableItem("crack_baggy", function(source)
+--     TriggerClientEvent("consumables:client:Crackbaggy", source)
+-- end)
 
-QBCore.Functions.CreateUseableItem("xtcbaggy", function(source, _)
-    TriggerClientEvent("consumables:client:EcstasyBaggy", source)
-end)
+-- QBCore.Functions.CreateUseableItem("xtcbaggy", function(source, _)
+--     TriggerClientEvent("consumables:client:EcstasyBaggy", source)
+-- end)
 
-QBCore.Functions.CreateUseableItem("oxy", function(source)
-    TriggerClientEvent("consumables:client:oxy", source)
-end)
+-- QBCore.Functions.CreateUseableItem("oxy", function(source)
+--     TriggerClientEvent("consumables:client:oxy", source)
+-- end)
 
-QBCore.Functions.CreateUseableItem("meth", function(source)
-    TriggerClientEvent("consumables:client:meth", source)
-end)
+-- QBCore.Functions.CreateUseableItem("meth", function(source)
+--     TriggerClientEvent("consumables:client:meth", source)
+-- end)
 
 ----------- / Tools
 
