@@ -120,6 +120,8 @@ local recoils = {
     -- [883325847] = 0.3,        --['weapon_petrolcan']
     -- [101631238] = 0.3,        --['weapon_fireextinguisher']
     -- [-1168940174] = 0.3,        --['weapon_hazardcan']
+
+    [GetHashKey("weapon_beanbagshotgun")] = 0.0,
 }
 local loopend = true
 
