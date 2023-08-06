@@ -73,7 +73,8 @@ local weapons = {
 	'WEAPON_SNOWBALL',
 	'WEAPON_PISTOLXM3',
 	'WEAPON_CANDYCANE',
-    'WEAPON_TASER'
+    'WEAPON_TASER',
+    'WEAPON_BEANBAGSHOTGUN',
 }
 
 local holstered = true
