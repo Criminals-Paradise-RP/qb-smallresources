@@ -46,3 +46,27 @@ RegisterNetEvent('QBCore:Client:VehicleInfo', function(data)
         listening = false
     end
 end)
+
+CreateThread(function()-- DISABLES AIM ASSIST ON CONTROLLERS
+    while true do
+        Wait(500)-- can set to 0 if needed 
+        local gamepad = GetLastInputMethod(2)
+        if not gamepad then
+           SetPlayerTargetingMode(3)--set targeting to "free-aim" if a controller is being used
+        else
+            Wait(2000)--wait if the player is using a keyboard
+        end
+    end
+end)
+
+CreateThread(function()
+    dynastyBlip = AddBlipForCoord(-703.7, 270.02, 83.15)
+    SetBlipSprite(dynastyBlip, 374)
+    SetBlipScale(dynastyBlip, 0.8)
+    SetBlipDisplay(dynastyBlip, 4)
+    SetBlipColour(dynastyBlip, 52)
+    SetBlipAsShortRange(dynastyBlip, true)
+    BeginTextCommandSetBlipName("STRING")
+    AddTextComponentSubstringPlayerName("Dynasty 8 Real Estate")
+    EndTextCommandSetBlipName(dynastyBlip)
+end)
