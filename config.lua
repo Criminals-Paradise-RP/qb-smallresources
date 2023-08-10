@@ -269,26 +269,26 @@ Config.BlacklistedPeds = {
 }
 
 Config.DisableVestDrawable = false -- Set to TRUE to disable the vest equipped when using heavy armor.
-Config.HolsterVariant = {1, 2, 3, 4, 6, 8, 9, 143, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 181, 182} 
+Config.HolsterVariant = {1, 2, 3, 4, 6, 8, 9, 143, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 181, 182}
 Config.HolsterableWeapons = {
-	'WEAPON_STUNGUN',
-	'WEAPON_PISTOL',
-	'WEAPON_PISTOL_MK2',
-	'WEAPON_COMBATPISTOL',
-	'WEAPON_APPISTOL',
-	'WEAPON_PISTOL50',
-	'WEAPON_REVOLVER',
-	'WEAPON_SNSPISTOL',
-	'WEAPON_HEAVYPISTOL',
-	'WEAPON_VINTAGEPISTOL',
-	--Custom Weapon
-	'WEAPON_DE',
-	'WEAPON_GLOCK17',
-	'WEAPON_M9',
-	'WEAPON_M1911',
-	'WEAPON_FNX45',
-	'WEAPON_GLOCK18C',
-	'WEAPON_GLOCK22'
+	-- 'WEAPON_STUNGUN',
+	-- 'WEAPON_PISTOL',
+	-- 'WEAPON_PISTOL_MK2',
+	-- 'WEAPON_COMBATPISTOL',
+	-- 'WEAPON_APPISTOL',
+	-- 'WEAPON_PISTOL50',
+	-- 'WEAPON_REVOLVER',
+	-- 'WEAPON_SNSPISTOL',
+	-- 'WEAPON_HEAVYPISTOL',
+	-- 'WEAPON_VINTAGEPISTOL',
+	-- --Custom Weapon
+	-- 'WEAPON_DE',
+	-- 'WEAPON_GLOCK17',
+	-- 'WEAPON_M9',
+	-- 'WEAPON_M1911',
+	-- 'WEAPON_FNX45',
+	-- 'WEAPON_GLOCK18C',
+	-- 'WEAPON_GLOCK22'
 }
 
 Config.Objects = { -- for object removal
