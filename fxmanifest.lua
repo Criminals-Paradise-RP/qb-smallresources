@@ -2,11 +2,12 @@ fx_version 'cerulean'
 game 'gta5'
 
 description 'QB-SmallResources'
-version '1.3.1'
+version '1.4.0'
 
 shared_scripts {
     '@qb-core/shared/locale.lua',
-    'locales/en.lua', -- Change to the language you want
+    'locales/en.lua',
+    'locales/*.lua',
     'config.lua'
 }
 server_script 'server/*.lua'
