@@ -235,7 +235,7 @@ Config.WeapDraw = {
         'WEAPON_REVOLVER',
         'WEAPON_SNSPISTOL',
         'WEAPON_HEAVYPISTOL',
-        'WEAPON_VINTAGEPISTOL'
+        'WEAPON_VINTAGEPISTOL',
         -- Custom
         'WEAPON_DE',
         'WEAPON_GLOCK17',
