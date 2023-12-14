@@ -1,4 +1,4 @@
--- local QBCore = exports['qb-core']:GetCoreObject()
+local QBCore = exports['qb-core']:GetCoreObject()
 
 local function tackleAnim()
     local ped = PlayerPedId()
@@ -27,7 +27,7 @@ RegisterCommand('tackle', function()
     end
 end)
 
--- RegisterKeyMapping('tackle', 'Tackle Someone', 'KEYBOARD', 'LMENU')
+RegisterKeyMapping('tackle', 'Tackle Someone', 'KEYBOARD', 'LMENU')
 
 RegisterNetEvent('tackle:client:GetTackled', function()
     SetPedToRagdoll(PlayerPedId(), math.random(1000, 6000), math.random(1000, 6000), 0, false, false, false)
