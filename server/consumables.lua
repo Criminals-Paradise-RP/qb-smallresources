@@ -128,6 +128,7 @@ QBCore.Functions.CreateUseableItem('advancedlockpick', function(source)
     TriggerClientEvent('lockpicks:UseLockpick', source, true)
 end)
 
+
 -- Events for adding and removing specific items to fix some exploits
 
 RegisterNetEvent('consumables:server:resetArmor', function()
